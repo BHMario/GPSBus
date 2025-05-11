@@ -28,5 +28,9 @@ public class Principal {
         for (DatoGPS dato : filtrados) {
             System.out.println(dato);  // Este toString muestra los datos como CSV
         }
+
+        System.out.println("\n== Exportando últimas posiciones en JSON ==");
+        ExportadorJSON.exportarUltimasPosiciones(datos);
+
     }
 }
